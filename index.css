@@ -1,0 +1,167 @@
+*{
+    margin: auto;
+    box-shadow: none;
+}
+body{
+    background-color: #FEFFFF;
+    font-family: "Bebas Neue", sans-serif;
+    overflow-x: hidden;
+}
+nav{ 
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem;
+}
+.navbar{
+    margin-top: 1rem;
+    margin-left: 84%;
+    border: 1px solid #686868;
+    border-radius: 50px;
+    padding: 15px 10px 17px 15px;
+    display: flex;
+    
+}
+.navbar ul li {
+    margin-right: 10px; 
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+.navbar img {
+    height: 20px; 
+    width: auto; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0.5rem;
+    padding: 10px;
+    background-color: #2C3333;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.navbar img:hover{
+    background-color: #104d54;
+    transition: all ease-in 0.6s;
+}
+.navbar ul{
+    padding: 0%;
+    list-style: none;
+    height: 23px;
+    display: flex;
+}
+.navbar li a{
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    
+}
+.logo{
+    margin-right: 22rem;
+    font-size: 18px;
+    cursor: pointer;
+}
+.hero{
+    margin-left: 6rem;
+    font-size: 150px;
+    color: #2c3333;
+    font-weight: 800;
+    position: relative;
+    cursor: default;
+    margin-bottom: 20rem;
+}
+.circle{
+    padding: 10rem;
+    width: 4%;
+    background-color: #2C3333;
+    border-radius: 50%;
+    margin-left: 80%;
+    position: absolute;
+    right: -13%;
+    top: 50%
+    
+}
+.circle2{
+    padding: 1rem;
+
+    background-color: #2C3333;
+    border-radius: 50%;
+    margin-left: 80%;
+    position: absolute;
+    right: 19%;
+    top: 70%
+}
+.container{
+    margin-top: 12rem;
+    margin-left: 6rem;
+}
+.container h3{
+    font-size: 200px;
+    color: #2c3333;
+    font-weight: 800;
+}
+.intro-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.intro-text{
+   padding: 0.5rem;
+   margin-right: 20rem;
+   color: #2c3333;
+   font-family: 'Chillax', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+}
+/* Keyframes for the fade-in and slide-up animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 5rem;
+}
+
+.intro, .intro-text, .more-text {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.intro {
+    animation-delay: 0.8s;
+}
+
+.intro-text {
+    animation-delay: 1s;
+}
+
+.more-text {
+    animation-delay: 1s;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #104d54;
+    border-radius: 10px;
+    border: 3px solid #f0f0f0;
+}
+
